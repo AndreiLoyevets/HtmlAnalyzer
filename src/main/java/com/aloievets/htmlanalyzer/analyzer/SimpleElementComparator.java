@@ -4,7 +4,7 @@ import org.jsoup.nodes.Element;
 
 public class SimpleElementComparator implements ElementComparator {
 
-    // attributes in order of importance
+    // in order of importance
     public static final String CLASS_ATTR = "class";
     public static final String ID_ATTR = "id";
     public static final String TITLE_ATTR = "title";
@@ -25,9 +25,13 @@ public class SimpleElementComparator implements ElementComparator {
             }
         }
 
+        if (!first.html().equals(second.html())) {
+            score += 4;
+        }
+
         if (first.hasAttr(CLASS_ATTR) && second.hasAttr(CLASS_ATTR)) {
             if (!first.attr(CLASS_ATTR).equals(second.attr(CLASS_ATTR))) {
-                score += 4;
+                score += 8;
             }
         }
 

@@ -1,0 +1,19 @@
+sample-1-evil-gemini.html
+
+[html, body[0], div[0], div[0], div[2], div[0], div[0], div[1], a[1]]
+<a class="btn btn-success" href="#check-and-ok" title="Make-Button" rel="done" onclick="javascript:window.okDone(); return false;"> Make everything OK </a>
+
+sample-2-container-and-clone.html
+
+[html, body[0], div[0], div[0], div[2], div[1], div[0], div[1], a[1]]
+<a href="#incorrect-link" class="btn btn-info" style="display:none" title="Make-Button" onclick="javascript:window.close(); return false;"> Make everything OK </a>
+
+sample-3-the-escape.html
+
+[html, body[0], div[0], div[0], div[2], div[0], div[0], div[2], a[0]]
+<a class="btn btn-success" href="#ok" title="Do-Link" rel="next" onclick="javascript:window.okDone(); return false;"> Do anything perfect </a>
+
+sample-4-the-mash.html
+
+[html, body[0], div[0], div[0], div[2], div[0], div[0], div[2], a[0]]
+<a class="btn btn-success" href="#ok" title="Make-Button" rel="next" onclick="javascript:window.okFinalize(); return false;"> Do all GREAT </a>
